@@ -64,7 +64,7 @@ public class PollControler {
 	
 	
 	@RequestMapping(value="/api/polls/{id}", method = RequestMethod.DELETE, consumes=MediaType.APPLICATION_JSON_VALUE)
-	public ResponseEntity<Poll> deletePoll(@PathVariable Long id, @RequestBody Poll poll){
+	public ResponseEntity<Poll> deletePoll(@PathVariable Long id){
 		 
 		pollService.delete(id);
 	
